@@ -46,8 +46,8 @@
     .hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:48px 0}
     .hero::before{content:"";position:absolute;inset:-24px -24px 0 -24px;border-radius:18px;background:
       linear-gradient(to bottom, rgba(11,15,26,.75), rgba(11,15,26,.92)),
-      url('https://images.unsplash.com/photo-1519669011783-4eaa95fa1d50?q=80&w=1600&auto=format&fit=crop');
-      background-size:cover;background-position:center;z-index:0;filter:contrast(1.1) saturate(1.05)}
+      url('https://images.weserv.nl/?url=images.unsplash.com/photo-1519669011783-4eaa95fa1d50&q=80&w=1600&fit=cover')
+      center/cover no-repeat;z-index:0;filter:contrast(1.1) saturate(1.05)}
     .hero>*{position:relative;z-index:1}
 
     .card{background:var(--bg-2);border:1px solid var(--stroke);padding:24px;border-radius:16px;box-shadow:0 18px 38px var(--shadow)}
@@ -130,10 +130,10 @@
         </div>
       </div>
       <div class="card alt">
+        <!-- HERO IMG via proxy -->
         <img
-          src="https://images.unsplash.com/photo-1520848315517-6b6b34576a37?q=80&w=1200&auto=format&fit=crop"
+          src="https://images.weserv.nl/?url=images.unsplash.com/photo-1520848315517-6b6b34576a37&w=1200&fit=cover"
           alt="Avó e neto africanos sorrindo na aldeia"
-          loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous"
           style="border-radius:12px;aspect-ratio:4/3;object-fit:cover"
           onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22><stop stop-color=%22%2310b981%22 offset=%220%25%22/><stop stop-color=%22%23f59e0b%22 offset=%22100%25%22/></linearGradient></defs><rect width=%22800%22 height=%22600%22 fill=%22%230f172a%22/><circle cx=%22400%22 cy=%22300%22 r=%22220%22 fill=%22url(%23g)%22 opacity=%27.35%27/><text x=%22400%22 y=%22310%22 text-anchor=%27middle%27 fill=%27%23d1fae5%27 font-size=%2740%27 font-family=%27Manrope,Arial%27>Imagem carregando…</text></svg>';"
         >
@@ -147,8 +147,8 @@
       <div class="grid">
         <div class="card" style="display:flex;gap:14px;align-items:flex-start">
           <div class="benefit-icon">
-            <img src="https://images.unsplash.com/photo-1520975856209-2b2d1f1e85e7?q=80&w=400&auto=format&fit=crop"
-                 alt="Tecido africano" loading="lazy"
+            <img src="https://images.weserv.nl/?url=images.unsplash.com/photo-1520975856209-2b2d1f1e85e7&w=400&fit=cover"
+                 alt="Tecido africano"
                  onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22><rect width=%22120%22 height=%22120%22 fill=%22%230f172a%22/><path d=%27M0 60h120M60 0v120%27 stroke=%27%23f59e0b%27 stroke-width=%273%27 opacity=%27.6%27/><circle cx=%2260%22 cy=%2260%22 r=%2232%22 fill=%27%2316a34a%27 opacity=%27.35%27/></svg>';">
           </div>
           <div>
@@ -162,8 +162,8 @@
         </div>
         <div class="card" style="display:flex;gap:14px;align-items:flex-start">
           <div class="benefit-icon">
-            <img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?q=80&w=400&auto=format&fit=crop"
-                 alt="Aprendizagem" loading="lazy"
+            <img src="https://images.weserv.nl/?url=images.unsplash.com/photo-1530435460869-d13625c69bbf&w=400&fit=cover"
+                 alt="Aprendizagem"
                  onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22><rect width=%22120%22 height=%22120%22 fill=%22%230f172a%22/><rect x=%2216%22 y=%2220%22 width=%2288%22 height=%2270%22 rx=%229%22 fill=%27%2316a34a%27 opacity=%27.35%27/><path d=%27M16 45h88M16 70h88%27 stroke=%27%23f59e0b%27 stroke-width=%273%27 opacity=%27.6%27/></svg>';">
           </div>
           <div>
@@ -177,8 +177,8 @@
         </div>
         <div class="card" style="display:flex;gap:14px;align-items:flex-start">
           <div class="benefit-icon">
-            <img src="https://images.unsplash.com/photo-1603796846097-bee99e4a601f?q=80&w=400&auto=format&fit=crop"
-                 alt="Garantia" loading="lazy"
+            <img src="https://images.weserv.nl/?url=images.unsplash.com/photo-1603796846097-bee99e4a601f&w=400&fit=cover"
+                 alt="Garantia"
                  onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22><rect width=%22120%22 height=%22120%22 fill=%22%230f172a%22/><polygon points=%2260,16 92,60 60,104 28,60%22 fill=%27%23f59e0b%27 opacity=%27.5%27/></svg>';">
           </div>
           <div>
@@ -195,12 +195,11 @@
     <section class="section">
       <h3 style="text-align:center">O que dizem os alunos</h3>
       <div class="grid">
-        <!-- Afonso -->
         <div class="card alt">
           <div class="testi">
             <div class="avatar">
-              <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=300&auto=format&fit=crop"
-                   alt="Afonso, aluno angolano" loading="lazy"
+              <img src="https://images.weserv.nl/?url=images.unsplash.com/photo-1527980965255-d3b416303d12&w=300&fit=cover"
+                   alt="Afonso, aluno angolano"
                    onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23111827%22/><text x=%2250%22 y=%2258%22 text-anchor=%27middle%27 fill=%27%23cbd5e1%27 font-size=%2734%27>A</text></svg>';">
             </div>
             <div class="quote">“Aprendi saudações e frases simples em Kimbundo. Já consigo conversar com os mais velhos na família.”</div>
@@ -208,12 +207,11 @@
           <p style="margin-top:6px;color:#cbd5e1">— Afonso M.</p>
         </div>
 
-        <!-- Garcia -->
         <div class="card alt">
           <div class="testi">
             <div class="avatar">
-              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=300&auto=format&fit=crop"
-                   alt="Garcia, aluno do curso" loading="lazy"
+              <img src="https://images.weserv.nl/?url=images.unsplash.com/photo-1524504388940-b1c1722653e1&w=300&fit=cover"
+                   alt="Garcia, aluno do curso"
                    onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23111827%22/><text x=%2250%22 y=%2258%22 text-anchor=%27middle%27 fill=%27%23cbd5e1%27 font-size=%2734%27>G</text></svg>';">
             </div>
             <div class="quote">“Gostei da didática: aulas curtas, diretas e práticas. Em poucos dias já estava a formar frases.”</div>
@@ -221,12 +219,11 @@
           <p style="margin-top:6px;color:#cbd5e1">— Garcia L.</p>
         </div>
 
-        <!-- Camila (Brasil) -->
         <div class="card alt">
           <div class="testi">
             <div class="avatar">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop"
-                   alt="Camila, aluna brasileira" loading="lazy"
+              <img src="https://images.weserv.nl/?url=images.unsplash.com/photo-1544005313-94ddf0286df2&w=300&fit=cover"
+                   alt="Camila, aluna brasileira"
                    onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23111827%22/><text x=%2250%22 y=%2258%22 text-anchor=%27middle%27 fill=%27%23cbd5e1%27 font-size=%2734%27>C</text></svg>';">
             </div>
             <div class="quote">“Sou brasileira e, mesmo sendo estrangeira, consegui aprender rápido. O curso é muito didático e claro.”</div>
@@ -238,7 +235,6 @@
 
     <div class="ornament"></div>
 
-    <!-- FAQ -->
     <section class="section faq">
       <h3 style="text-align:center">Perguntas frequentes</h3>
       <div class="grid" style="grid-template-columns:1fr 1fr">
@@ -251,7 +247,6 @@
 
     <div class="ornament"></div>
 
-    <!-- CTA FINAL -->
     <section class="section" style="text-align:center">
       <h3 style="font-size:28px;margin-bottom:10px">Pronto para falar Kimbundo?</h3>
       <p class="subtitle" style="margin:0 auto 18px;max-width:680px">Clica e garante o preço especial de lançamento. Menos cliques, mais conversão.</p>
